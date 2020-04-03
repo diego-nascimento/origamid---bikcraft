@@ -269,8 +269,7 @@ header .header_menu  ul li .menu-ativo {
 .portfolio {
   width: 100%;
   background-color: black;
-  margin-top: 20px;
-  padding: 20px 0px;
+  padding: 20px 0;
 }
 
 .portfolio .subtitulo {
