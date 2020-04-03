@@ -106,8 +106,12 @@ p {
   margin-top: 20px;
   
 }
+header .header_menu  ul li .menu-ativo {
+  color: white;
+  
+}
 
-.header_menu ul li a {
+.header_menu  li a {
   color: black;
   font-weight: bold;
   text-transform: uppercase;
@@ -121,9 +125,7 @@ p {
   color: #fff;
 }
 
-.header .menu-ativo {
-  color: white;
-}
+
 
 
 /* introdução */
@@ -189,7 +191,7 @@ p {
   width: 100%;
   margin-top: 92px;
   height: 160px;
-  background-size: cover; 
+  
   color: #fff;
   text-align: center;
   padding-top: 30px;
