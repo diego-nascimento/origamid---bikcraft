@@ -13,6 +13,11 @@ p {
   line-height: 20px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .btn {
   border: 3px solid #fec63e;
   padding: 10px 30px ;
@@ -226,6 +231,11 @@ header .header_menu  ul li .menu-ativo {
   text-align: center;
 }
 
+.produtos_lista li img{
+  margin: 0 auto;
+  text-align: center;
+}
+
 .produtos_lista li h3 {
   font-weight: bold;
   font-size: 18px;
@@ -291,11 +301,13 @@ header .header_menu  ul li .menu-ativo {
 /* Qualidade */
 
 .qualidade {
-  
   padding: 60px 0px;
   text-align: center;
 }
 
+.qualidade img {
+  margin: 0 auto;
+}
 .qualidade:after {
   content: "";
   width: 634px;
@@ -414,3 +426,69 @@ header .header_menu  ul li .menu-ativo {
   padding: 20px 0;
 }
 
+/*Slide*/
+
+.js [data-slide] {
+  position: relative;
+}
+.js [data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+  left: -200px;
+  
+}
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transform: translateX(200px);
+  transition:  200ms ease-in;
+}
+
+.js [data-slide-nav] {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+.js [data-slide-nav] > button {
+  display: inline-block;
+  width: 12px;
+  margin: 4px;
+  height: 12px;
+  border: none;
+  padding: 0px;
+  border-radius: 6px;
+  background: #1d1d1d;
+  text-indent: -100px;
+  overflow: hidden;
+  outline: 0;
+  cursor: pointer;
+}
+.js [data-slide-nav] > button.active {
+  background: #fec454;
+}
+
+
+[data-anime] {
+  
+  opacity: 0;
+}
+.anime {
+  opacity: 1;
+  
+  transition: transform .8s, opacity .8s;
+}
+
+.fadeInDown {
+  transform: translate3d(0,-20px,0);
+}
+.fadeInUp {
+  transform: translate3d(0,20px,0);
+}
+.fadeInRight {
+  transform: translate3d(20px,0,0);
+}
+.fadeInLeft {
+  transform: translate3d(-20px,0,0);
+}

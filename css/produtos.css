@@ -153,11 +153,11 @@
   font-family: Georgia, 'Times New Roman', Times, serif
 }
 
-.orcamento-dados span:last-child {
-  margin-bottom: 20px;
+.orcamento-dados span:nth-of-type(even){
+  margin-bottom: 30px;
 }
 
-.dados-email {
+.orcamento-dados span:last-child {
   margin-bottom: 20px;
 }
 
