@@ -492,3 +492,13 @@ header .header_menu  ul li .menu-ativo {
 .fadeInLeft {
   transform: translate3d(-20px,0,0);
 }
+
+.nao-aparece {
+  visibility: hidden;
+  height: 0px;
+  position: absolute;
+}
+
+#form-sucesso, #form-error{
+  color: red;
+}

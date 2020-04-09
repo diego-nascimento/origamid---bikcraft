@@ -10,6 +10,18 @@
   <link rel="stylesheet" href="css/produtos.css">
   <link rel="stylesheet" href="css/responsive.css">
   <title>Bikcraft - Produtos</title>
+  <meta name="description" 
+  content="Compre a sua bicicleta personalizada na Bikcraft.
+    Possuimos modelo de Passeio, Retrô e Esporte.">
+
+  <meta property = "og:type" content="website">
+  <meta property = "og:title" content="Bikcraft - Bicicletas Personalizadas">
+  <meta property = "og:description" content="Compre a sua bicicleta personalizada na Bikcraft.
+  Possuimos modelo de Passeio, Retrô e Esporte.">
+  <meta property = "og:url" content="https://www.bikcraft.com.br">
+  <meta property = "og:image" content="http://bikcraft.com/assets/img/og-image.png">
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
   <script>
     document.documentElement.classList.add("js")
   </script>
@@ -106,19 +118,26 @@
   <section class="orcamento">
     <div class="container">
       <h2 class="subtitulo">Orçamento</h2>
-      <form id="form-orcamento" class="grid-8 form" action="">
+      <form id="form-orcamento" class="grid-8 form formphp" action="./enviar.php" method="post">
         <label for="nome">Nome</label>
-        <input type="text" id="nome">
+        <input type="text" id="nome" name="nome" required>
 
         <label for="Email">Email</label>
-        <input type="text" id="Email">
+        <input type="email" id="Email" name="email" required>
 
         <label for="Telefone">Telefone</label>
-        <input type="text" id="Telefone">
+        <input type="phone" id="Telefone" name="telefone">
+
+        
+        <label class="nao-aparece" name="leaveblank">Se voce nao é um robo, deixe em branco</label>
+        <input type="text" class="nao-aparece">
+
+        
       
         <label for="mensagem">Especificações</label>
-        <textarea name="spec" id="spec"></textarea>
-        <button type="submit" class="btn">Enviar</button>
+        <textarea name="spec" id="spec" name="mensagem" required></textarea>
+        <button id="enviar" name="enviar" type="submit" class="btn">Enviar</button>
+ 
       </form>
       <div class="orcamento-dados grid-8">
         <h3>Dados</h3>
@@ -137,14 +156,14 @@
     </div>
   </section>
   
-  <section class="quebra">
+  <div class="quebra">
     <blockquote class="quote-externo container">
       <p>
         "o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos."
       </p>
       <cite>William Morris</cite>
     </blockquote>
-  </section>
+  </div>
   <footer>
     <div class="footer">
       <div class="container">
@@ -179,5 +198,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/simple-form.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
